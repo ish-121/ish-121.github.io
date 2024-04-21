@@ -28,4 +28,17 @@ document.addEventListener('DOMContentLoaded', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
+  document.addEventListener('DOMContentLoaded', function () {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('header nav ul li a');
+  
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+  
+      // If the href matches the current path, add the "active" class
+      if (currentPath.includes(href)) {
+        link.classList.add('active');
+      }
+    });
+  });
   
