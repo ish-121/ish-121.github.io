@@ -1,9 +1,13 @@
 /* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: linear-gradient(to bottom right, #a8d08d, #a98b6d);
     margin: 0;
     padding: 0;
+    font-weight: 400;
+    font-style: normal;
     color: #333;
   }
   
